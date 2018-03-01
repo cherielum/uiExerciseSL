@@ -1,13 +1,263 @@
 * {
     margin: 0; 
     padding: 0;
+    font-family: arial,sans-serif;
 }
 
+/*========================
+NAV BAR 
+========================*/
 div.nav-wrapper {
     background-color: #f1f1f1;
- 
 }
 
 div.nav-wrapper a {
-    color: #6c6c6c; 
+    color: #3d3939; 
 }
+
+div.col-3 {
+    width: 2000px;
+    margin-left: 10px;
+}
+
+.hide-on-med-and-down {
+    margin-right: 30px;
+}
+
+/*Google Icon Nav Bar */
+.brand-logo {
+    margin-left: 20px;
+}
+/* PROFILE IMAGE */
+.profile-img {
+	border-radius: 50%;
+	background-size: 32px 32px;
+	height: 32px;
+    width: 32px;
+    position: relative;
+    top: 0px;
+}
+
+h6{
+    font-size: 1.5rem;
+    line-height: 110%;
+    margin: 20px 0 .4rem 0;
+    color: gray;
+}
+
+/*========================
+SIDE MAV BAR 
+=======================*/
+
+.button {
+    background-color: #d14b31; /* rgb of google*/
+    border-radius: 10px;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover{
+	background: #333;
+}
+
+.modal {
+	display: none;  /*takes away the modal content*/
+	/* position: fixed; */
+	z-index: 1;
+	left: 0; 
+	top:0;
+	height: 100%;
+	width: 100%;
+	overflow: auto; /*enable scrollbar if needed*/
+	background-color:rgba(0,0,0,0.5);
+}
+
+.modal-content {
+	background-color: #f4f4f4;
+	margin: 15% auto; /*auto is left and right*/
+	width: 70%; /*makes box width smaller*/
+	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+	animation-name: modalOpen;
+	animation-duration: 1s;
+}
+
+.modal-header {
+	background: #404040; 
+	padding: 15px; 
+	color:white;
+}
+
+.modal-body {
+	padding: 10px 20px;
+}
+
+.modal .modal-footer #submitModal {
+	padding: 10px;
+	color: #fff;
+    text-align: center;
+    background-clip: padding-box; padding: 15px;
+    background: #4b8afe;
+    background-clip: padding-box;
+}
+
+input#submitModal {
+    float:left;
+}
+
+
+.closeBtn {
+	color: #ccc; /*light gray*/
+	float: right;
+	font-size: 30px;
+	color: #fff;
+}
+
+.closeBtn:hover,.closeBtn:focus {
+	color: #000;
+	text-decoration: none; /*no underline*/
+	cursor: pointer;
+}
+
+@keyframes modalOpen {
+	from {opacity:0}
+	to{opacity:1;}
+}
+@keyframes modalOpen {
+	from {opacity:0}
+	to{opacity:1;}
+}
+
+.contentInputLineColor {
+    height: 100px;
+}
+
+.sidenav {
+    height: 1500px;
+    width: 160px;
+    position: absolute;
+    /* z-index: 1; */
+    top: 0;
+    left: 0;
+    background-color: #d5d4d4;
+    /* overflow-x: hidden; */
+    padding-top: 20px;
+}
+
+div.sidenav {
+    margin-top: 64px;
+    width: 15%;
+    border-top: 1px solid #e4e4e4; 
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.category, .button {
+    margin-left: 20px;
+}
+
+/*========================
+TABS
+========================*/
+
+.tab {
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    background-color: #d5d4d4;
+    border-top: 1px solid #e4e4e4; 
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: #474646;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+div .col-9.tab {
+   margin-right: 20px;
+}
+
+/*========================
+SEARCH BAR 
+========================*/
+
+/*========================
+EMAILS 
+========================*/
+
+
+.container-fluid li {
+	display: inline;
+}
+
+.container-fluid li a {
+	/* display: block; */
+	color: #b5b59c;
+	text-align: center;
+	padding: 10px 30px;
+	margin: 5px;
+	text-decoration: none;
+}
+
+ul li a, ul.nav li a:visited {
+    color: #a51a10; 
+}
+
+ul li a:hover, ul.nav li a:active {
+    color: #b5b59c; 
+}
+
+ul li.active a {
+    color: #b5b59c; 
+}
+
+h1 {
+  color: #a51a10;
+}
+
