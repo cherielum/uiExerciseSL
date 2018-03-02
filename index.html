@@ -77,10 +77,12 @@
                     </div>	
                 </div>
               </div>
-          <a href="#about" class = "category">Inbox</a>
-          <a href="#services" class = "category">Work</a>
-          <a href="#clients" class = "category" >Travel </a>
-          <a href="#contact" class = "category">Spam</a>
+          <!-- <a href="#contacts" class = "category" >Contacts</a>
+          <a href="#work" class = "category">Work</a>
+          <a href="#travel" class = "category" >Travel </a>
+          <a href="#spam" class = "category">Spam</a> -->
+
+          <img src = "./images/banner.png" id ="banner">
         </div>
         
       <div class="col-9">
@@ -88,7 +90,8 @@
           <button class="tablinks" onclick="Emailtype(event, 'work')">Work</button>
           <button class="tablinks" onclick="Emailtype(event, 'travel')">Travel</button>
           <button class="tablinks" onclick="Emailtype(event, 'spam')">Spam</button>
-          <button class="tablinks" onclick="Emailtype(event, 'contacts')">Contacts</button>
+          <button class="tablinks" onclick="Emailtype(event, 'contacts')"> Contacts</button>
+          <button class="tablinks" onclick="Emailtype(event, 'contacts')"> + Category</button>
         </div>
         
         <div id="work" class="tabcontent"style="display: block; width: 1000;width: 1100px;">
@@ -99,19 +102,19 @@
               <ul id="names" class="collection with-header">
             
                     <li class ="collection-item">
-                      <a href =""> <b>bob.smith@gmail.com</b> <b> Hello </b> Lorem ipsum dolor sit amet, consectetur adipiscing elit... <b>2017-03-05</b> </a>
+                      <a href =""> <i>bob.smith@gmail.com</i><b> Hello </b> Lorem ipsum dolor sit amet, consectetur adipiscing elit... <b>2017-03-05</b> </a>
                     </li>
                     <li class ="collection-item">
-                      <a href =""> <b>bob.smith@gmail.com</b> <b> Hello again</b> Lorem ipsum dolor sit amet, consectetur adipiscing... <b>2017-03-05</b> </a>
+                      <a href =""> <i>bob.smith@gmail.com</i> <b> Hello again</b> Lorem ipsum dolor sit amet, consectetur adipiscing... <b>2017-03-05</b> </a>
                     </li>
                     <li class ="collection-item">
-                      <a href =""> <b>bob.smith@gmail.com</b> <b> A spam email that got through the filter </b> Lorem ipsum dolor sit ... <b>2017-03-05</b> </a>
+                      <a href =""> <i>bob.smith@gmail.com</i> <b> A spam email that got through the filter </b> Lorem ipsum dolor sit ... <b>2017-03-05</b> </a>
                     </li>
                     <li class ="collection-item">
-                        <a href =""> <b>bob.smith@gmail.com</b> <b> Meeting Recap</b> Lorem ipsum dolor sit ... <b>2017-03-05</b> </a>
+                        <a href =""> <i>bob.smith@gmail.com</i> <b> Meeting Recap</b> Lorem ipsum dolor sit ... <b>2017-03-05</b> </a>
                     </li>
                     <li class ="collection-item">
-                        <a href =""> <b>bob.smith@gmail.com</b> <b> Your flight confirmation #122345</b> Lorem ipsum dolor sit ... <b>2017-03-05</b> </a>
+                        <a href =""> <i>bob.smith@gmail.com</i> <b> Your flight confirmation #122345</b> Lorem ipsum dolor sit ... <b>2017-03-05</b> </a>
                     </li>
                 
               </ul>
@@ -122,18 +125,21 @@
           <h3>Travel</h3>
           <div class = "container">
            
-              <input type="text" id= "filterInput" placeholder="Search travel emails...">
+              <input type="text" id= "filterInput1" placeholder="Search travel emails...">
               <ul id="names" class="collection with-header">
             
                     <li class ="collection-item">
-                      <a href =""> <b>bob.smith@gmail.com</b> <b> Hello</b> </a>
+                      <a href =""> <i>bob.smith@gmail.com</i> <b>Important information about your account</b> Lorem ipsum dolor sit ... <b>2017-03-05</b> </a>
                     </li>
                      <li class ="collection-item">
-                      <a href =""> Apple Pie </a>
+                      <a href =""> <i>bob.smith@gmail.com</i> <b> Hello again</b> Lorem ipsum dolor sit ... <b>2017-03-05</b> </a>
                     </li>
                       <li class ="collection-item">
-                      <a href =""> Apple Pie </a>
+                        <a href =""> <i>bob.smith@gmail.com</i> <b> Breaking news!</b> Lorem ipsum dolor sit ... <b>2017-03-05</b> </a>
                     </li>
+                    <li class ="collection-item">
+                      <a href =""> <i>bob.smith@gmail.com</i> <b> Your flight confirmation #122345</b> Lorem ipsum dolor sit ... <b>2017-03-05</b> </a>
+                  </li>
               </ul>
             </div>
         </div>
@@ -146,13 +152,13 @@
               <ul id="names" class="collection with-header">
             
                     <li class ="collection-item">
-                      <a href =""> <b>bob.smith@gmail.com</b> <b> Hello</b> </a>
+                      <a href =""> <b>bob.smith@gmail.com</b> <b> Lorem ipsum dolor sit amet</b> Lorem ipsum dolor sit ... <b>2017-03-05</b> </a>
                     </li>
                      <li class ="collection-item">
-                      <a href =""> 1 </a>
+                      <a href =""> <b>bob.smith@gmail.com</b> <b> Your upcoming appointment</b> Lorem ipsum dolor sit ... <b>2017-03-05</b> </a>
                     </li>
                       <li class ="collection-item">
-                      <a href =""> 2 </a>
+                        <a href =""> <b>bob.smith@gmail.com</b> <b> Ut lacinia vestibulum eros</b> Lorem ipsum dolor sit ... <b>2017-03-05</b> </a>
                     </li>
                 
               </ul>
@@ -173,6 +179,18 @@
                       </li>
                         <li class ="collection-item">
                         <a href =""> <b>Jason Smith</b> jason.smith@gmail.com </a> </a>
+                      </li>
+                      </li>
+                        <li class ="collection-item">
+                        <a href =""> <b>Kyle Porter</b> kyle.porter@salesloft.com </a> </a>
+                      </li>
+                      </li>
+                        <li class ="collection-item">
+                        <a href =""> <b>Daniel Andrews</b> daniel.andrews@salesloft.com </a> </a>
+                      </li>
+                      </li>
+                        <li class ="collection-item">
+                        <a href =""> <b>Nora Ignatius</b> nora.ignatius@salesloft.com </a> </a>
                       </li>
                 </ul>
               </div>

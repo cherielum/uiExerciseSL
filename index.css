@@ -48,9 +48,15 @@ h6{
 /*========================
 SIDE MAV BAR 
 =======================*/
+#banner {
+    width: 170px;
+    display: block; 
+    
+}
+
 
 .button {
-    background-color: #d14b31; /* rgb of google*/
+    background-color: #d14b31; 
     border-radius: 10px;
     color: white;
     padding: 10px 22px;
@@ -224,10 +230,6 @@ div .col-9.tab {
 }
 
 /*========================
-SEARCH BAR 
-========================*/
-
-/*========================
 EMAILS 
 ========================*/
 
@@ -246,7 +248,7 @@ EMAILS
 }
 
 ul li a, ul.nav li a:visited {
-    color: #a51a10; 
+    color: #1d1d1f; 
 }
 
 ul li a:hover, ul.nav li a:active {
@@ -255,9 +257,5 @@ ul li a:hover, ul.nav li a:active {
 
 ul li.active a {
     color: #b5b59c; 
-}
-
-h1 {
-  color: #a51a10;
 }
 
